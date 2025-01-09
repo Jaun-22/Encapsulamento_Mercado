@@ -50,7 +50,7 @@ public class Estoque {
     public void exibirEstoque() {
         System.out.println("---Etoque atual---");
         if (itens.isEmpty()) { //Verifica se o estoque esta vazio
-            System.out.println("O etoque está vazio");
+            System.out.println("O estoque está vazio");
         } else {
             for (Produtos item : itens) { //Percorre o ArrayList
 
@@ -66,10 +66,9 @@ public class Estoque {
 
     //Metodo para buscar um Item pelo Id
 
-
-    public Produtos bucarId(Integer id){
-        for (Produtos item : itens){
-            if (item.getId() == id){
+    public Produtos bucarId(Integer id) {
+        for (Produtos item : itens) {
+            if (item.getId() == id) {
                 return item;
             }
         }
